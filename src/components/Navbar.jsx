@@ -58,7 +58,7 @@ const Navbar = () => {
           <InputBase placeholder="search..." />
         </Search>
         <Icons>
-          <Badge badgeContent={4} color="error">
+          <Badge badgeContent={3} color="error">
             <Mail />
           </Badge>
           <Badge badgeContent={4} color="error">

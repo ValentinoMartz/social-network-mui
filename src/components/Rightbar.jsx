@@ -10,58 +10,58 @@ import {
   ListItemAvatar,
   ListItemText,
   Typography,
+  GridListTileBar,
+  IconButton,
+  ImageListItemBar,
+  Stack,
 } from "@mui/material";
 import React from "react";
 
 const Rightbar = () => {
   return (
     <Box flex={2} p={2} sx={{ display: { xs: "none", sm: "block" } }}>
-      <Box position="fixed" width={300}>
-        <Typography variant="h6" fontWeight={100}>
+      <Box position="fixed" width={100} sx={{ width: { md: "300" } }}>
+        <Typography variant="h6" fontWeight={300}>
           Online Friends
         </Typography>
-        <AvatarGroup max={7}>
-          <Avatar
-            alt="Remy Sharp"
-            src="https://material-ui.com/static/images/avatar/1.jpg"
-          />
-          <Avatar
-            alt="Travis Howard"
-            src="https://material-ui.com/static/images/avatar/2.jpg"
-          />
-          <Avatar
-            alt="Cindy Baker"
-            src="https://material-ui.com/static/images/avatar/3.jpg"
-          />
-          <Avatar
-            alt="Agnes Walker"
-            src="https://material-ui.com/static/images/avatar/4.jpg"
-          />
-          <Avatar
-            alt="Trevor Henderson"
-            src="https://material-ui.com/static/images/avatar/5.jpg"
-          />
-          <Avatar
-            alt="Trevor Henderson"
-            src="https://material-ui.com/static/images/avatar/7.jpg"
-          />
-          <Avatar
-            alt="Trevor Henderson"
-            src="https://material-ui.com/static/images/avatar/8.jpg"
-          />
-          <Avatar
-            alt="Trevor Henderson"
-            src="https://material-ui.com/static/images/avatar/7.jpg"
-          />
-          <Avatar
-            alt="Trevor Henderson"
-            src="https://material-ui.com/static/images/avatar/8.jpg"
-          />
-        </AvatarGroup>
-        <Typography variant="h6" fontWeight={100} mt={2} mb={2}>
+        <Stack direction="row" justifyContent="start">
+          <AvatarGroup max={7}>
+            <Avatar
+              alt="Remy Sharp"
+              src="https://material-ui.com/static/images/avatar/1.jpg"
+              alignItems="start"
+            />
+            <Avatar
+              alt="Travis Howard"
+              src="https://material-ui.com/static/images/avatar/2.jpg"
+            />
+            <Avatar
+              alt="Cindy Baker"
+              src="https://material-ui.com/static/images/avatar/3.jpg"
+            />
+            <Avatar
+              alt="Agnes Walker"
+              src="https://material-ui.com/static/images/avatar/4.jpg"
+            />
+            <Avatar
+              alt="Trevor Henderson"
+              src="https://material-ui.com/static/images/avatar/5.jpg"
+            />
+            <Avatar
+              alt="Trevor Henderson"
+              src="https://material-ui.com/static/images/avatar/6.jpg"
+            />
+            <Avatar
+              alt="Trevor Henderson"
+              src="https://material-ui.com/static/images/avatar/7.jpg"
+            />
+          </AvatarGroup>
+        </Stack>
+
+        <Typography variant="h6" fontWeight={300} mt={2} mb={2}>
           Latest Photos
         </Typography>
-        <ImageList cols={3} rowHeight={100} gap={5}>
+        <ImageList cols={3} gap={5}>
           <ImageListItem>
             <img
               src="https://material-ui.com/static/images/image-list/breakfast.jpg"
@@ -81,7 +81,7 @@ const Rightbar = () => {
             />
           </ImageListItem>
         </ImageList>
-        <Typography variant="h6" fontWeight={100} mt={2}>
+        <Typography variant="h6" fontWeight={300} mt={3}>
           Latest Conversations
         </Typography>
         <List
@@ -91,7 +91,7 @@ const Rightbar = () => {
             <ListItemAvatar>
               <Avatar
                 alt="Remy Sharp"
-                src="https://material-ui.com/static/images/avatar/3.jpg"
+                src="https://material-ui.com/static/images/avatar/2.jpg"
               />
             </ListItemAvatar>
             <ListItemText
@@ -114,7 +114,10 @@ const Rightbar = () => {
           <Divider variant="inset" component="li" />
           <ListItem alignItems="flex-start">
             <ListItemAvatar>
-              <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
+              <Avatar
+                alt="Travis Howard"
+                src="https://material-ui.com/static/images/avatar/4.jpg"
+              />
             </ListItemAvatar>
             <ListItemText
               primary="Summer BBQ"
@@ -136,7 +139,10 @@ const Rightbar = () => {
           <Divider variant="inset" component="li" />
           <ListItem alignItems="flex-start">
             <ListItemAvatar>
-              <Avatar alt="Cindy Baker" src="/static/images/avatar/3.jpg" />
+              <Avatar
+                alt="Cindy Baker"
+                src="https://material-ui.com/static/images/avatar/3.jpg"
+              />
             </ListItemAvatar>
             <ListItemText
               primary="Oui Oui"
